@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Retirement</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  const MS_PER_DAY = 1000 * 60 * 60 * 24;
+  const now = new Date();
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  const lastDay = Date.UTC(2026, 1, 2); // months are zero based
+  const count = Math.floor((lastDay - today) / MS_PER_DAY) + 1; // include today as well
+  $("#days").text(count);
+});
+</script>
+</head>
+<body>
+
+<h1>
+It could be that...
+</h1>
+<p>
+I'm tired of running around looking
+for answers to questions that I already know.
+</p>
+<p>
+I might build me a castle of memories
+just to have somewhere to go.
+</p>
+<!-- From Blaze Foley's Clay Pigeons -->
+
+<p>
+<span>&nbsp;</span>
+</p>
+<p>
+So... just spitballing here, but could there be <span id="days" style="color: red;">a lot of</span> days until retirement?
+How many <a href="https://www.timeanddate.com/date/workdays.html?y2=2026&m2=2&d2=2&ti=on">work days</a> is that?
+</p>
+
+</body>
+</html>
