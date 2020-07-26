@@ -1,5 +1,5 @@
 Retirement
 ==========
 
-[This is a web page](https://mpuening.github.io/retirement/).
+[Click here](https://mpuening.github.io/retirement/index.html).
 
