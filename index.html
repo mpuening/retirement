@@ -34,7 +34,7 @@ $(document).ready(function(){
   const MS_PER_DAY = 1000 * 60 * 60 * 24;
   const now = new Date();
   const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
-  const lastDay = Date.UTC(2020, 10, 30); // months are zero based
+  const lastDay = Date.UTC(2026, 1, 2); // months are zero based
   const count = Math.floor((lastDay - today) / MS_PER_DAY) + 1; // include today as well
   $("#days").text(count);
 });
@@ -66,7 +66,7 @@ So... just spitballing here, but how many days until retirement?
 <h1 id="days">A Lot</h1>
 </p>
 <p>
-How many <a href="https://www.timeanddate.com/date/workdays.html?y2=2020&m2=11&d2=30s&ti=on">work days</a> is that?
+How many <a href="https://www.timeanddate.com/date/workdays.html?y2=2026&m2=2&d2=2&ti=on">work days</a> is that?
 </p>
 
 </body>
